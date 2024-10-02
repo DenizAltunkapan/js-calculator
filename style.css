@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(104, 104, 104);
+}
+.calculator{
+    width: 210px;
+    height: 190px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: rgb(67, 59, 59);
+    border-radius: 5px;
+} 
+.display{
+    width: 210px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgba(210, 211, 212, 0.687);
+    text-align: end;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.number{
+    width: 35px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+.operator{
+    width: 41px;
+    height: 30px;
+    margin-right: 3px;
+    background-color: black;
+    color: white;
+}
+.undo{
+    width:40px;
+    height: 30px;
+    margin: 2px;
+    text-align: center;
+    background-color: rgba(240, 205, 7, 0.824);;
+    font-weight: bold;
+    font-size: 12px;
+    text-indent: 4px;
+}
+.bottom{
+    display: inline-block; 
+    width: 115px;
+}
+.equal{
+    width:85px;
+    height: 35px;
+    background-color: rgba(240, 205, 7, 0.824);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
