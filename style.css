@@ -18,6 +18,8 @@ body{
     text-align: end;
     font-size: 25px;
     font-weight: bolder;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 .number{
     width: 35px;

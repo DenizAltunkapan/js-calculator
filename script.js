@@ -5,6 +5,11 @@ const operatorButtons = document.querySelectorAll('.operator');
 const equalButton = document.querySelector('.equal');
 
 let currentInput = '';
+let operators = [];
+
+operatorButtons.forEach(button => {
+    operators.push(button.textContent);
+});
 
 function updateDisplay() {
     display.textContent = currentInput || '0';
@@ -15,8 +20,9 @@ function append(input){
     updateDisplay();
 }
 
-function evaluate(caculation){
-    
+function evaluate(calculation){
+    // %- evaluation still missing
+    currentInput = eval(calculation.replaceAll('×', '*').replaceAll('÷', '/'));
 }
 
 [...numberButtons, ...operatorButtons].forEach(button => {
