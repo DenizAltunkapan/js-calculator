@@ -3,6 +3,8 @@ const display = document.querySelector('.display');
 const numberButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
 const equalButton = document.querySelector('.equal');
+const delButton = document.querySelector('.delete');
+const acButton = document.querySelector('.allclear');
 
 let currentInput = '';
 let operators = [];
@@ -21,8 +23,8 @@ function append(input){
 }
 
 function evaluate(calculation){
-    // %- evaluation still missing
-    currentInput = eval(calculation.replaceAll('×', '*').replaceAll('÷', '/'));
+    // %- evaluation still missings
+    currentInput = String(eval(calculation.replaceAll('×', '*').replaceAll('÷', '/')));
 }
 
 [...numberButtons, ...operatorButtons].forEach(button => {
@@ -37,3 +39,12 @@ equalButton.addEventListener('click', function(){
     updateDisplay();
 });
 
+delButton.addEventListener('click', function(){
+    currentInput = currentInput.slice(0, -1);
+    updateDisplay();
+});
+
+acButton.addEventListener('click',function(){
+    currentInput='';
+    updateDisplay();
+});
